@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qaishar - Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+    body {
+        background-color: #f6f6f6;
+        color: #333;
+        line-height: 1.6;
+        padding-top: 90px;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+    }
+    footer {
+        padding: 2rem;
+        border-top: 1px solid #ccc;
+        justify-content: center;
+        font-size: 0.9rem;
+        display: flex;
+        background-color: #ffffff;
+        color: #666;
+    }
+    nav a {
+        color: #555;
+        margin-left: 2rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    nav a:hover {
+        color: #e67e88;
+    }
+    .hero {
+        display: flex;
+        padding: 4rem 2rem;
+        align-items: center;
+        gap: 4rem;
+        background-color: #fff0f2;
+    }
+    .hero img {
+        height: 350px;
+        border-radius: 8px;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #d84a62;
+    }
+    .btn {
+        background-color: #f1949b;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        margin-top: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .services, .projects, .contact, .achievements {
+        padding: 4rem 2rem;
+        background-color: #fafafa;
+    }
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #d84a62;
+    }
+    .progress-bar {
+        margin-bottom: 1.5rem;
+    }
+    .progress-label {
+        margin-bottom: 0.3rem;
+        font-weight: 600;
+    }
+    .bar-container {
+        background: #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .bar {
+        height: 20px;
+        background-color: #f1949b;
+    }
+    .card-container {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    .card {
+        background: #ffffff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        flex: 1 1 250px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        color: #444;
+    }
+    .card.highlight {
+        background: #ffe3e6;
+    }
+    .projects .card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    .contact-icons {
+        margin-top: 1rem;
+    }
+    .contact-icons a {
+        margin-right: 1rem;
+        display: inline-block;
+    }
+    .contact-icons img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) saturate(0) contrast(1);
+    }
+</style>
+
+</head>
+<body>
+  <header>
+    <div><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Logo" width="30" /></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="aboutme2.jpg" alt="Qaishar" />
+    <div class="hero-text">
+    <p>Halo, saya Qaishar</p>
+    <h1>Web Developer</h1>
+    <p>Perkenalkan, nama saya Muhammad Qaishar Dwisyah Putra. Saya berasal dari Bogor dan lahir di Bekasi pada tanggal 14 Januari 2009. Saya memiliki minat besar dalam pengembangan web serta teknologi digital secara umum.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 class="section-title">Apa yang Saya Lakukan</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Web Developer</h3>
+        <p>Saya membangun dan mengembangkan website yang responsif dan fungsional menggunakan berbagai teknologi modern.</p>
+      </div>
+      <div class="card highlight">
+        <h3>Aktivitas Fisik</h3>
+        <p>Saya memiliki hobi berolahraga, terutama dalam bidang futsal, bersepeda, dan body building untuk menjaga kesehatan dan disiplin diri.</p>
+      </div>
+      <div class="card">
+        <h3>Model Konten</h3>
+        <p>Saya berperan sebagai model konten untuk kegiatan promosi dan media sosial di SMK IT As-Syifa Boarding School Subang.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="achievements">
+  <h2 class="section-title">Keahlian Saya</h2>
+  <div class="progress-bar">
+    <div class="progress-label">HTML</div>
+    <div class="bar-container">
+      <div class="bar" style="width: 90%"></div>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-label">CSS</div>
+    <div class="bar-container">
+      <div class="bar" style="width: 20%"></div>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-label">Java Script</div>
+    <div class="bar-container">
+      <div class="bar" style="width: 10%"></div>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-label">PHP</div>
+    <div class="bar-container">
+      <div class="bar" style="width: 75%"></div>
+    </div>
+  </div>
+</section>
+
+  <section class="projects" id="projects">
+    <h2 class="section-title">Proyek Unggulan Saya</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="laundry.png" alt="Web Laundry">
+        <h4>Web Laundry</h4>
+      </div>
+      <div class="card">
+        <img src="plannest.png" alt="PlanNest">
+        <h4>PlanNest</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Mari Bekerja Sama</h2>
+    <p>Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan, silakan hubungi saya melalui platform berikut:</p>
+    <div class="contact-icons">
+      <a href="https://wa.me/6285692075520" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.instagram.com/qa_is_har" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Muhammad Qaishar Dwisyah Putra | Semangat Dan Tekun</p>
+  </footer>
+</body>
+</html>
